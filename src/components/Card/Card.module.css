@@ -1,0 +1,93 @@
+.container {
+  width: 289px;
+  height: 153px;
+  background: #fff;
+  border: 1px solid #E7EAEE;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 0 rgb(255, 255, 255);
+  cursor: pointer;
+}
+.container:hover {
+  box-shadow: rgba(70, 77, 103, 0.1) 0 10px 20px, rgba(156, 169, 208, 0.1) 0 6px 6px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  color: #72777B;
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  background: #E6FAFF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  color: #2D2D2D;
+  margin: 24px 0 4px 0;
+}
+
+.graphDescription {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  color: #72777B;
+  margin-bottom: 12px;
+}
+
+.graphContainer {
+  width: 289px;
+  height: 4px;
+  background: #F0F4F8;
+  border-radius: 50px;
+  position: relative;
+  margin: auto 0 9px 0;
+}
+
+.graphStart, .graphEnd {
+  position: absolute;
+  bottom: 10px;
+  color: #2d2d2d;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 14px;
+}
+
+.graphStart {
+  left: 0;
+}
+
+.graphEnd {
+  right: 0;
+}
+
+.graphValue {
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=Card.module.css.map */

@@ -1,0 +1,97 @@
+.container {
+  margin-right: 40px;
+  transition: width 0.5s;
+  display: flex;
+}
+
+.body {
+  background: #FFFFFF;
+  border-right: 1px solid #E7EAEE;
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px 0 0 4px;
+  align-items: center;
+  transition: width 0.5s;
+}
+
+.hideMenu, .showMenu {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: transform 0.5s;
+}
+
+.showMenu {
+  transform: rotate(180deg);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  cursor: pointer;
+}
+.iconActive svg {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #D4F7F2;
+}
+
+.navText {
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  color: rgb(0, 74, 63);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: auto;
+  margin-bottom: 100px;
+  border-radius: 4px;
+}
+
+.userPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 42px;
+  align-items: center;
+}
+
+.addButton {
+  background: linear-gradient(0deg, #00A1CC -1.2%, #0EBE81 99.7%);
+  box-shadow: 0 4px 4px rgba(1, 125, 152, 0.2);
+  border: 0 solid #FFFFFF;
+  font-size: 20px;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  user-select: none;
+}
+
+.TEMPuser {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Sidebar.module.css.map */
