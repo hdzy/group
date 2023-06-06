@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Sidebar } from "./components/Sidebar/Sidebar";
+import {Header} from "./components/Header/Header";
+import {Home} from "./screens/Home/Home";
+import {Route, Routes} from "react-router";
+import {BrowserRouter} from "react-router-dom";
+import {Tickets} from "./screens/Tickets/Tickets";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return (
+        <React.StrictMode>
+        <div className={"App"}>
+            <BrowserRouter>
+            <div className="flex">
+                <Sidebar/>
+                <div className="column">
+                    <Header/>
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/tickets" element={<Tickets/>}/>
+                        </Routes>
+                </div>
+            </div>
+            </BrowserRouter>
+        </div>
+        </React.StrictMode>
+    );
+};

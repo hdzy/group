@@ -1,0 +1,49 @@
+.ticketsContainer
+    display: flex
+    flex-direction: column
+    gap: 20px
+    width: 100%
+
+.ticketContainer
+    height: 100%
+    max-height: 50px
+    display: flex
+    align-items: center
+    font-family: "Roboto Mono", monospace
+    justify-content: space-between
+
+
+.ticketFullContainer
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    padding: 30px
+    transition: box-shadow 0.3s ease-in-out, height 0.7s ease-in-out
+    box-shadow: 0 0 0 rgb(255, 255, 255)
+    background: #fff
+    border: 1px solid #E7EAEE
+    border-radius: 8px
+    margin-right: 40px
+    cursor: pointer
+
+    &:hover
+        box-shadow: rgba(70, 77, 103, 0.1) 0 10px 20px, rgba(156, 169, 208, 0.1) 0 6px 6px
+
+.ticketColumnLeft
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.title
+    font-weight: 400
+    font-size: 30px
+
+.term
+    font-size: 15px
+    color: #b8bdc0
+    font-style: italic
+    font-weight: 100
+
+.openIcon
+    width: 25px
+    height: 25px
